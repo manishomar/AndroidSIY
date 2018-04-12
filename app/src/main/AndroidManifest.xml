@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.siy">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".controller.logIn.MainActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".controller.main.Splash"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.ExplorerSignUp.ExplorerSignUpActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".controller.RecorderSignUp.RecorderSignUpActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".controller.logIn.SignIn"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".controller.ExplorerSignUp.IntroSlideActivity"
+            android:screenOrientation="locked" />
+        <activity android:name=".controller.ExplorerSignUp.ProfileActivity" />
+        <activity
+            android:name=".ForgetPassword.ForgetPasswordActivity"
+            android:screenOrientation="locked" />
+        <activity android:name=".ForgetPassword.OTPActivity" />
+        <activity android:name=".ForgetPassword.ResetPassword" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".controller.logIn.BookingConfirmActivity" />
+        <activity android:name=".Map.HomeActivity" />
+        <activity android:name=".SlideBar.ChatListActivity" />
+        <activity android:name=".SlideBar.PaymentActivity" />
+        <activity android:name=".SlideBar.SettingActivity" />
+        <activity android:name=".SlideBar.HelpActivity" />
+        <activity android:name=".controller.RecorderSignUp.IntroSlideRecorderActivity" />
+        <activity android:name=".controller.RecorderSignUp.RecorderProfileActivity" />
+        <activity android:name=".controller.RecorderSignUp.VerifyEmailIdActivity" />
+        <activity android:name=".controller.RecorderSignUp.RecorderHomeActivity" />
+        <activity android:name=".controller.RecorderSignUp.PaymentDetail"></activity>
+    </application>
+
+</manifest>

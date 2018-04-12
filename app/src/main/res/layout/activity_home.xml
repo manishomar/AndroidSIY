@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/toolbar_layout_home" />
+
+
+        <FrameLayout
+            android:id="@+id/include_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include_toolbar">
+
+
+            <fragment android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.siy.Map.MapsActivity" />
+            />
+
+            <!--<include
+                android:id="@+id/include_map"
+                layout="@layout/activity_maps" />-->
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_place_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/include_toolbar"
+            android:text="   Search Address"
+            android:drawableLeft="@drawable/search"
+            android:background="@drawable/btn_custom_explorer"
+            android:padding="5dp"
+            />
+
+
+        <Button
+            android:id="@+id/btn_hire_recorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_custom_submit"
+            android:padding="5dp"
+            android:text="Hire a Recorder"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/include_slidebar_header"
+                layout="@layout/slidebar_header" />
+
+            <include
+                android:id="@+id/include_slidbar_content"
+                layout="@layout/slidebar_content" />
+
+
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

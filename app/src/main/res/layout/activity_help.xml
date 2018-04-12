@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlideBar.HelpActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_back_help"
+        android:layout_width="50dp"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/back"
+        android:padding="13dp"
+        android:onClick="ivToBackActivity"
+        />
+
+    <TextView
+        android:id="@+id/action_bar_help"
+        android:layout_width="match_parent"
+        android:text="Help"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/iv_back_help"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/tv_text_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar_help"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/hit_a_snag_drop_us_a_line_and_we_ll_get_back_to_you_within_24_hours"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/et_typehere"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_text_help"
+        android:layout_marginTop="30dp"
+        android:gravity="start"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Type Here"
+        android:singleLine="false"
+        android:imeOptions="actionDone"
+        android:background="@drawable/tv_custom_help"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_typehere"
+        android:background="@drawable/btn_custom_submit"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Send"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+</RelativeLayout>

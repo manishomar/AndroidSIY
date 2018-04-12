@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/iv_editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit_profile"
+        android:padding="5dp"/>
+    <ImageView
+        android:id="@+id/iv_slidebar_backarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"/>
+<ImageView
+    android:id="@+id/iv_splashlogo"
+    android:layout_width="100dp"
+    android:layout_height="80dp"
+    android:layout_centerInParent="true"
+    android:src="@drawable/splash_logo"
+    android:layout_below="@+id/iv_editprofile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_splashlogo"
+        android:text="Andrew"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+</RelativeLayout>

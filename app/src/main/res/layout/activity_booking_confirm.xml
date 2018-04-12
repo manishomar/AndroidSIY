@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.logIn.BookingConfirmActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_booking_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/iv_arrow_booking_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_arrow_booking_confirm"
+            android:text="Booking Confirmed"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_booking_confirm"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        android:src="@drawable/profilrpic" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_Image_View"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="135dp"
+
+        android:layout_marginTop="130dp"
+        android:src="@drawable/profilrpic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_booking_confirm"
+        android:text="@string/congrats_you_have_just_hired_andrew"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="andrew"
+        android:layout_below="@+id/circle_Image_View"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_chat_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:background="@drawable/btn_custom_submit"
+        android:layout_marginTop="40dp"
+        android:text="Chat Now"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_chat_now"
+        android:background="@drawable/btn_custom_submit"
+        android:layout_marginTop="20dp"
+        android:text="Cancel Booking"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:text="Note: Be sure to tell your recorder of any special
+        requests you may have(Ex: show me the
+              inside of the kitchen cabinets!)"/>
+
+</RelativeLayout>

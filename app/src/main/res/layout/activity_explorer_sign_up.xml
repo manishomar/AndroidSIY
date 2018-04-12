@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.siy.controller.ExplorerSignUp.ExplorerSignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sign_up" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="imgPrev"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_explorer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#4b63e2e2"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_signup_explorer"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_email_wrapper_explorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_signup_explorer"
+                android:textColorHint="@color/colorWhite">
+
+            <EditText
+                android:id="@+id/et_email_signup_explorer"
+                android:layout_width="300dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_signup_explorer"
+                android:hint="    Email Id"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:drawableLeft="@drawable/email"
+                android:textColorHint="@color/colorWhite"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_password_wrapper_explorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_email_wrapper_explorer"
+                android:textColorHint="@color/colorWhite">
+
+
+            <EditText
+                android:id="@+id/et_password_signup_explorer"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password"
+                android:textColor="@color/colorWhite"
+                android:inputType="textPassword"
+                android:layout_below="@+id/et_email_signup_explorer"
+                android:hint="    Password"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/colorWhite"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_cpassword_wrapper_explorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_password_wrapper_explorer"
+                android:textColorHint="@color/colorWhite">
+
+
+            <EditText
+                android:id="@+id/et_confirmpassword_signup_explorer"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_password_signup_explorer"
+                android:hint="    Confirm Password"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:textColor="@color/colorWhite"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/password"
+                android:textColorHint="@color/colorWhite"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/input_cpassword_wrapper_explorer"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/btn1_custom"
+                android:text="Sign Up"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_alreadymember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aleady_a_member_sign_in"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_view_explorer"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="btnSignIn"/>
+
+
+
+
+</RelativeLayout>

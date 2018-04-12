@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlideBar.SettingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_arrow_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:src="@drawable/back"
+            android:onClick="ivToBackActivity"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_arrow_setting"
+            android:text="Setting"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_setting"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_notification_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textSize="20dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_notification_setting" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_notification_setting"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_notification_setting"
+            android:text="About Us"
+            android:drawableRight="@drawable/right_arrow"
+            android:textSize="20dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_about_us"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_about_us"
+            android:text="Privacy Policy"
+            android:drawableRight="@drawable/right_arrow"
+            android:textSize="20dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_privacy_policy"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_privacy_policy"
+            android:text="FAQ"
+            android:drawableRight="@drawable/right_arrow"
+            android:textSize="20dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_faq"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorBlack"
+            />
+
+        <TextView
+            android:id="@+id/tv_log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_faq"
+            android:text="Log Out"
+            android:drawableRight="@drawable/right_arrow"
+            android:textSize="20dp"
+            android:onClick="tvLogOut"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_log_out"
+            android:layout_marginTop="5dp"
+            android:alpha="0.5"
+            android:background="@color/colorBlack"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.siy.controller.RecorderSignUp.RecorderProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/root_layout_profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/iv_backarrow"
+                    android:text="My Profile"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/root_layout_recorder_profile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/root_layout_profile"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/splash_logo" />
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile_pic"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/profilrpic"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="3dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_upload_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="165dp"
+                android:src="@drawable/upload_profile" />
+
+            <ImageView
+                android:id="@+id/iv_update_profilepic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/root_layout_recorder_profile"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/iv_custom_profile"
+                android:src="@drawable/profile_logo" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_update_upload_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="205dp"
+                android:src="@drawable/upload_profile" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_fname_wrapper_recorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_update_profilepic"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/et_fname_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="First Name  "
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_lname_wrapper_recorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_fname_wrapper_recorder"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/et_lname_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="Last Name  "
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_lname_wrapper_recorder"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Date of Birth"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv_dob"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:alpha="0.5"
+                android:background="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/et_current_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_dob"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Current Address" />
+
+            <Spinner
+                android:id="@+id/spinner_i_am_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_current_address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/drop_down"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/spinner_i_am_a"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:alpha="0.5"
+                android:background="@color/colorBlack" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_i_am_a"
+                android:layout_margin="5dp"
+                android:text="Desired commute" />
+
+            <EditText
+                android:id="@+id/et_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_i_am_a"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/drop_down"
+                android:text="3-5 Miles"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/et_edit_payment_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_distance"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/right_arrow"
+                android:hint="Edit Payment Setting"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_edit_payment_setting"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="I agree to the terms and conditions" />
+
+            <CheckBox
+                android:id="@+id/checkbox_condition"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/et_edit_payment_setting"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/btn_custom_check_box" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_condition"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_custom_submit"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

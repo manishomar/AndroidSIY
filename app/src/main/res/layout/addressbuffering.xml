@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="@string/awesome_we_ll_notify_youonce_you_ve_been_matched_with_the_recorder"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="@string/it_may_take_upto_24h_to_be_connected_all_orders_will_be_complete_within_2_5_days"
+        android:textColor="@color/colorWhite"
+        android:textSize="10dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

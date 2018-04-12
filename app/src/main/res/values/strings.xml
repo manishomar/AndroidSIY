@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SIY</string>
+    <string name="aleady_a_member_sign_in">Already a member? <b><u>Sign In</u></b></string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="congrats_you_have_just_hired_andrew">congrats! You\'ve just hired <b><u>Andrew</u></b></string>
+    <string name="email_id">\t \t \t \t Email Id</string>
+    <string name="password">\t \t \t \t password</string>
+    <string name="confirm_password">\t \t \t \t Confirm Password</string>
+    <string-array name="language">
+        <item>English</item>
+        <item>spanish</item>
+        <item>Hindi</item>
+        <item>french</item>
+    </string-array>
+    <string-array name="profession">
+        <item>I AM A</item>
+        <item>Doctor</item>
+        <item>Engineer</item>
+        <item>Student</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string name="draweropen">open</string>
+    <string name="drawerclose">close</string>
+    <string name="hit_a_snag_drop_us_a_line_and_we_ll_get_back_to_you_within_24_hours">Hit a snag?
+        Drop us a line and we\'ll get back to\n\t\t\t\t    you within 24 hours!</string>
+    <string name="awesome_we_ll_notify_youonce_you_ve_been_matched_with_the_recorder">
+        Awesome. We\'ll notify youonce you\'ve been \n matched with the Recorder.</string>
+    <string name="it_may_take_upto_24h_to_be_connected_all_orders_will_be_complete_within_2_5_days">
+        it may take upto 24h to be connected. All orders will be \n complete within 2-5 days.</string>
+    <string name="please_enter_the_temporary_code_from_your_email_to_verify_your_account_xyz1234_xy_com">
+        Please enter the temporary code from \n your email to verify your account \n <b>xyz1234@xy.com</b> </string>
+    <string name="enter_code_here"> \t \t  Enter Code Here</string>
+    <string name="orders">Orders \n  \t \t <b>15</b></string>
+    <string name="earned">Earned \n  <b>$120</b></string>
+
+
+</resources>
+

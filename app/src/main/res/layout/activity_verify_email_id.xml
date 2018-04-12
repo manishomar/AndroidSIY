@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    tools:context="com.siy.controller.RecorderSignUp.VerifyEmailIdActivity">
+
+    <RelativeLayout
+        android:id="@+id/root_layout_verify_emailid"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:onClick="backActivity"
+            android:src="@drawable/back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_arrow"
+            android:text="Verify Email ID"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_enter_the_temporary_code_from_your_email_to_verify_your_account_xyz1234_xy_com"
+        android:layout_below="@+id/root_layout_verify_emailid"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_otp_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_text_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="100dp"
+
+        >
+
+        <EditText
+            android:id="@+id/et_otp_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_password_wrapper"
+            android:drawableLeft="@drawable/password_grey"
+            android:hint="@string/enter_code_here"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColorHint="@color/colorWhite" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:layout_below="@+id/input_otp_wrapper"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_custom_submit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_submit"
+        android:gravity="center"
+        android:text="Change Email Address?"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+</RelativeLayout>
